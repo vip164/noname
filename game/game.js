@@ -175,7 +175,7 @@ new Promise(resolve => {
 		};
 
 		if (location.protocol.startsWith('http') && 'serviceWorker' in navigator) {
-			let scope = window.location.protocol + '//' + window.location.host + '/';
+			let scope = window.location.protocol + '//' + window.location.host + '/noname/';
 			navigator.serviceWorker.getRegistrations()
 				.then(async registrations => {
 					let findServiceWorker = registrations.find(registration => {
